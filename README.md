@@ -1,10 +1,17 @@
 # Client
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+Style/components by [Bootstrap](https://getbootstrap.com/) (BootstrapCDN to use it without downloading)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Server
+
+Package manager [NPM](https://www.npmjs.com/)
+Server runs using [NodeJS](https://nodejs.org/en/)
+Fast, unopinionated, minimalist web framework for Node.js [Express](https://expressjs.com/)
+Node.js body parsing middleware [body-parser](https://github.com/expressjs/body-parser)
+Elegant [mongodb](https://www.mongodb.com/) object modeling for node.js [mongoose](https://mongoosejs.com/)
+
 
 ## Code scaffolding
 
