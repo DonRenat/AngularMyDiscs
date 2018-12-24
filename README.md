@@ -1,7 +1,7 @@
 # Client
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
-Style/components by [Bootstrap](https://getbootstrap.com/) (BootstrapCDN to use it without downloading)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.  
+Style/components by [Bootstrap](https://getbootstrap.com/) (BootstrapCDN to use it without downloading)  
 
 
 ## Server

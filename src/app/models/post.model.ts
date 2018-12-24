@@ -3,8 +3,10 @@ export class Post {
 		this.id = '';
 		this.title = '';
 		this.description = '';
+    this.price = '';
 	}
 	public id;
 	public title;
 	public description;
+  public price;
 }

@@ -20,13 +20,13 @@ export class AddPostComponent {
   }
 
   addPost() {
-  	if(this.post.title && this.post.description){
+  	if(this.post.title && this.post.price && this.post.description){
   		this.addPostService.addPost(this.post).subscribe(res =>{
   			this.closeBtn.nativeElement.click();
         this.commonService.notifyPostAddition();
   		});
   	} else {
-  		alert('Title and Description required');
+  		alert('Title, description and price required');
   	}
   }
 

@@ -2,7 +2,7 @@
     <a *ngFor="let post of posts" href="#" class="list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">{{post.title}}</h5>
-            <small>3 days ago</small>
+            <div class="alert alert-success" role="alert" style="padding-right: 3px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">{{post.price}}</div>
         </div>
         <p class="mb-1">{{post.description}}</p>
         <small>read more...</small>
