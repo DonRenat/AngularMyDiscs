@@ -27,7 +27,7 @@ export class AddPostComponent implements OnInit {
   }
 
   addPost() {
-  	if(this.post.title && this.post.description && this.post.price){
+  	if(this.post.title && this.post.description && this.post.price && this.post.img){
       if(this.post._id){
         this.addPostService.updatePost(this.post).subscribe(res =>{
           this.closeBtn.nativeElement.click();
@@ -40,7 +40,7 @@ export class AddPostComponent implements OnInit {
         });
       }
   	} else {
-  		alert('Title, description and price required');
+  		alert('Title, description, price and image url required');
   	}
   }
 

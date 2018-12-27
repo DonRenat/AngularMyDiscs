@@ -1,7 +1,7 @@
 <div class="list-group">
     <a *ngFor="let post of posts" class="list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-between">
-          <img src="assets/img/red-dead-redemption-2-ultimate-edition-steel-book-ps4.jpg" style="width: 140px;height: 160px;">
+          <img src={{post.img}} style="width: 140px;height: 160px;">
           <div style="height: 150px;width: 900px;padding-left: 24px;">
             <h5 class="mb-1">{{post.title}}</h5>
             <p class="mb-1">{{post.description}}</p>

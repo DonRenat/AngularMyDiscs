@@ -13,7 +13,8 @@ export class AddPostService {
 		return this.http.post('/api/post/createPost',{
 			title : post.title,
 			description : post.description,
-      price : post.price
+      price : post.price,
+      img : post.img
 		})
 	}
 
@@ -22,7 +23,8 @@ export class AddPostService {
         id: post._id,
         title : post.title,
         description : post.description,
-        price: post.price
+        price: post.price,
+        img : post.img
     })
 }
 
