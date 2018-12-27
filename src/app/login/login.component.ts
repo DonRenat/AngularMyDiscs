@@ -9,30 +9,29 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css'],
   providers: [ LoginService ]
 })
-export class LoginComponent{
+export class LoginComponent {
 
   public user : User;
 
   constructor(private loginService: LoginService, private router: Router) {
-      this.user = new User();
+  	this.user = new User();
   }
 
   validateLogin() {
-    if(this.user.username && this.user.password) {
-        this.loginService.validateLogin(this.user).subscribe(result => {
-        console.log('result is ', result);
+  	if(this.user.username && this.user.password) {
+  		this.loginService.validateLogin(this.user).subscribe(result => {
         if(result['status'] === 'success') {
+          localStorage.setItem('loggedInUser', this.user.username);
           this.router.navigate(['/home']);
         } else {
-          alert('Wrong username/password');
+          alert('Wrong username or password');
         }
-
       }, error => {
-        console.log('Error is: ', error);
+        console.log('error is ', error);
       });
-    } else {
-        alert('Enter username and password!');
-    }
+  	} else {
+  		alert('Enter username and password');
+  	}
   }
 
 }
